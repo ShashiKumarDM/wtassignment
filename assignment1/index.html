@@ -1,178 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WT | Assignment 1</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WT | Assignment 1</title>
 
-    <!-- styles -->
-    <link rel="stylesheet" href="./main.css">
+        <!-- styles -->
+        <link rel="stylesheet" href="./main.css">
 
-    <!-- javascripts -->
-    <script src="./main.js"></script>
+        <!-- javascripts -->
+        <!-- <script src="./main.js" defer></script> -->
+        <script defer>
+            function toscroll(value) {
+                event.preventDefault();
+                const id = document.getElementById(value);
+                window.scrollTo(0,id.offsetTop-100);
+            }
+        </script>
 
-</head>
+    </head>
 
-<body>
-    <header>
-        <div class="logo"><img src="./images/logo-01.svg" alt="logo"></div>
-        <nav>
-            <ul>
-                <li><a href="#" class="active">home</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">education</a></li>
-                <li><a href="#">skills</a></li>
-                <li><a href="#">works</a></li>
-                <li><a href="#">contact me</a></li>
-                <li><a href="#">login</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <aside class="left">
-            <ul>
-                <li><a href="#">education</a>
+    <body>
+        <header>
+            <div class="header">
+                <div class="logo"><img src="./images/logo-01.svg" alt="logo"></div>
+                <nav>
                     <ul>
-                        <li><a href="#">10th</a></li>
-                        <li><a href="#">Pre University</a></li>
-                        <li><a href="#">Bachuler of Engineering</a></li>
+                        <li><a href="#" onclick="toscroll('home')">home</a></li>
+                        <!-- <li><a href="#">about</a></li> -->
+                        <li><a href="#" onclick="toscroll('education')">education</a></li>
+                        <li><a href="#" onclick="toscroll('skills')">skills</a></li>
+                        <li><a href="#" onclick="toscroll('work')">works</a></li>
+                        <li><a href="#" onclick="toscroll('contact')">contact me</a></li>
+                        <li><a href="#">login</a></li>
                     </ul>
-                </li>
-                <li><a href="#">skills</a>
-                    <ul>
-                        <li><a href="#">non technical skills</a></li>
-                        <li><a href="#">technical skills</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">work</a>
-                    <ul>
-                        <li><a href="#">projects</a></li>
-                        <li><a href="#">acharya habba</a></li>
-                        <li><a href="#">others</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">contact me</a></li>
-            </ul>
-        </aside>
-
-
-        <section class="main-content">
-            <div class="details">
-                <h1>Shashi Kumar D M</h1>
-                <p>Pasenate about web Development, Photography and Designing</p>
-
-                <div class="current-edu">
-                    <p>Currently perceiving my Engineering Degree at Acharya Institutes of Technology in the Domain
-                        Information Science and Engineering</p>
-                </div>
+                </nav>
             </div>
+        </header>
 
-            <section>
-                <h1>Education</h1>
-                <article>
-                    <h1>10<sup>th</sup> Standard</h1>
-                    <div>
-                        <h4>Institute: </h4>
-                        <p>Saint Theresa Primary and High School</p>
-                    </div>
-                    <div>
-                        <h4>Marks: </h4>
-                        <p>80%</p>
-                    </div>
-                </article>
-                <article>
-                    <h1>Pre University</h1>
-                    <div>
-                        <h4>Institute: </h4>
-                        <p>Acharya Pre-University College</p>
-                    </div>
-                    <div>
-                        <h4>Marks: </h4>
-                        <p>78%</p>
-                    </div>
-                </article>
-                <article>
-                    <h1>Bachuler of Engineering</h1>
-                    <div>
-                        <h4>Institute: </h4>
-                        <p>Acharya Institute of Technology</p>
-                    </div>
-                    <div>
-                        <h4>Domain: </h4>
-                        <p>Information Science and Engineering</p>
-                    </div>
-                    <div>
-                        <h4>Marks: </h4>
-                        <p>8.4 CGPA (6th Sem)</p>
-                    </div>
-                </article>
-            </section>
-
-            <section>
-                <h1>Skills</h1>
-                <article>
-                    <h1>Non Technical Skills</h1>
+        <main>
+            <aside class="left">
+                <div>
                     <ul>
-                        <li>Creative</li>
-                        <li>Adaptive</li>
-                        <li>Self Learning</li>
-                        <li>Attention to detail</li>
-                        <li>Time Management</li>
-                        <li>Problem Solving</li>
+                        <li><a href="#" onclick="toscroll('education')">education</a>
+                            <ul>
+                                <li><a href="#" onclick="toscroll('tenth')">10th</a></li>
+                                <li><a href="#" onclick="toscroll('puc')">Pre University</a></li>
+                                <li><a href="#" onclick="toscroll('be')">Bachuler of Engineering</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" onclick="toscroll('skills')">skills</a>
+                            <ul>
+                                <li><a href="#" onclick="toscroll('nts')">non technical skills</a></li>
+                                <li><a href="#" onclick="toscroll('ts')">technical skills</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" onclick="toscroll('work')">work</a>
+                            <ul>
+                                <li><a href="#" onclick="toscroll('project')">projects</a></li>
+                                <li><a href="#" onclick="toscroll('others')">others</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" onclick="toscroll('contact')">contact me</a></li>
                     </ul>
-                </article>
-                <article>
-                    <h1>Technocal Skills</h1>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JAVASCRIPT</li>
-                        <li>PHP</li>
-                        <li>DBMS</li>
-                        <li>JAVA</li>
-                        <li>PYTHON</li>
-                        <li>GIT</li>
-                    </ul>
-                </article>
-            </section>
+                </div>
+            </aside>
 
-            <section>
-                <h1>Works</h1>
-                <article>
-                    <h1>Projects</h1>
-                    <article>
-                        <h1>Invoice Management System</h1>
+
+            <section class="main-content">
+                <div class="details" id="home">
+                    <h1>Shashi Kumar D M</h1>
+                    <p>Pasenate about web Development, Photography and Designing</p>
+
+                    <div class="current-edu">
+                        <p>Currently perceiving my Engineering Degree at Acharya Institutes of Technology in the Domain
+                            Information Science and Engineering</p>
+                    </div>
+                </div>
+
+                <section id="education">
+                    <h1>Education</h1>
+                    <article id="tenth">
+                        <h1>10<sup>th</sup> Standard</h1>
                         <div>
-                            <p>It was a <b> DBMS </b> project used to store the product details, customers details and also generate invoices and estimates</p><br>
-                            <p>Languates used: HTML, CSS, JS, DBMS, PHP</p>
+                            <h4>Institute: </h4>
+                            <p>Saint Theresa Primary and High School</p>
+                        </div>
+                        <div>
+                            <h4>Marks: </h4>
+                            <p>80%</p>
                         </div>
                     </article>
-                    <article>
-                        <h1>Notes Repository</h1>
+                    <article id="puc">
+                        <h1>Pre University</h1>
                         <div>
-                            <p>It was a <b> File Structures </b> project which helps in distribution of Notes to all the students</p><br>
-                            <p>Languates used: HTML, CSS, JS, JSON, PHP</p>
+                            <h4>Institute: </h4>
+                            <p>Acharya Pre-University College</p>
+                        </div>
+                        <div>
+                            <h4>Marks: </h4>
+                            <p>78%</p>
                         </div>
                     </article>
-                </article>
+                    <article id="be">
+                        <h1>Bachuler of Engineering</h1>
+                        <div>
+                            <h4>Institute: </h4>
+                            <p>Acharya Institute of Technology</p>
+                        </div>
+                        <div>
+                            <h4>Domain: </h4>
+                            <p>Information Science and Engineering</p>
+                        </div>
+                        <div>
+                            <h4>Marks: </h4>
+                            <p>8.4 CGPA (6th Sem)</p>
+                        </div>
+                    </article>
+                </section>
+
+                <section id="skills">
+                    <h1>Skills</h1>
+                    <article id="nts">
+                        <h1>Non Technical Skills</h1>
+                        <ul>
+                            <li>Creative</li>
+                            <li>Adaptive</li>
+                            <li>Self Learning</li>
+                            <li>Attention to detail</li>
+                            <li>Time Management</li>
+                            <li>Problem Solving</li>
+                        </ul>
+                    </article>
+                    <article id="ts">
+                        <h1>Technocal Skills</h1>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JAVASCRIPT</li>
+                            <li>PHP</li>
+                            <li>DBMS</li>
+                            <li>JAVA</li>
+                            <li>PYTHON</li>
+                            <li>GIT</li>
+                        </ul>
+                    </article>
+                </section>
+
+                <section id="work">
+                    <h1>Works</h1>
+                    <article id="project">
+                        <h1>Projects</h1>
+                        <article>
+                            <h1>Invoice Management System</h1>
+                            <div>
+                                <p>It was a <b> DBMS </b> project used to store the product details, customers details
+                                    and also generate invoices and estimates</p><br>
+                                <p>Languates used: HTML, CSS, JS, DBMS, PHP</p>
+                            </div>
+                        </article>
+                        <article>
+                            <h1>Notes Repository</h1>
+                            <div>
+                                <p>It was a <b> File Structures </b> project which helps in distribution of Notes to all
+                                    the students</p><br>
+                                <p>Languates used: HTML, CSS, JS, JSON, PHP</p>
+                            </div>
+                        </article>
+                    </article>
+
+                    <article id="others">
+                        <h1>Others</h1>
+                        <article>
+                            <h1>Notes Repository with Laravel framework</h1>
+                            <div>
+                                <p>This is the Notes Repository built using Laravel framework (PHP language). it is a
+                                    secure and a easy platform for the notes distribution and scheduling the Classes by
+                                    adding the meeting-links</p><br>
+                                <p>It has been deployed for a School</p>
+                            </div>
+                        </article>
+                    </article>
+                </section>
+
+                <footer id="contact">
+                    <h1>Contact Me</h1>
+                    <article>
+                        <ul>
+                            <li>
+                                <h5>Address: </h5> #xyz xFloor zMain, Bangalore- 560107
+                            </li>
+                            <li>
+                                <h5>Phone: </h5> 8901119879
+                            </li>
+                            <li>
+                                <h5>email: </h5> shashikumar.17.beis@acharya.ac.in
+                            </li>
+                        </ul>
+                    </article>
+                </footer>
+
             </section>
 
-            
 
-        </section>
-
-
-        <aside class="right">
-            <marquee behavior="scroll" direction="up" id="maq">
-                <h5 onmouseover="maq.stop()" onmouseout="maq.start()">Starting an internship in sparks foundation</h5>
-                <h5 onmouseover="maq.stop()" onmouseout="maq.start()">Making Web technology mini project</h5>
-                <h5 onmouseover="maq.stop()" onmouseout="maq.start()">Co-cubes is in the next week</h5>
-                <h5 onmouseover="maq.stop()" onmouseout="maq.start()">Wana work as a developer</h5>
-            </marquee>
-        </aside>
-    </main>
-</body>
+            <aside class="right">
+                <div>
+                    <marquee behavior="scroll" direction="up" id="maq">
+                        <h5 onmouseover="maq.stop()" onmouseout="maq.start()">Starting an internship in sparks
+                            foundation
+                        </h5>
+                        <h5 onmouseover="maq.stop()" onmouseout="maq.start()">Making Web technology mini project</h5>
+                        <h5 onmouseover="maq.stop()" onmouseout="maq.start()">Co-cubes is in the next week</h5>
+                        <h5 onmouseover="maq.stop()" onmouseout="maq.start()">Wana work as a developer</h5>
+                    </marquee>
+                </div>
+            </aside>
+        </main>
+    </body>
 
 </html>
