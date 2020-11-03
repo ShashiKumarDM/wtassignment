@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+
 body{
     margin: 0;
     padding: 0;
@@ -62,7 +64,7 @@ aside{
 }
 
 aside marquee{
-    height: 80%;
+    height: 500px;
 }
 
 aside ul{
@@ -85,4 +87,42 @@ aside ul li a{
 }
 aside ul li a:hover{
     transform: translateY(-3px);
+}
+
+
+.main-content{
+    padding: 30px;
+}
+
+
+.main-content .details h1{
+    margin-bottom: 0;
+}
+.main-content .details h1+p{
+    font-size: .8em;
+    margin-top:0;
+}
+
+.current-edu{
+    padding: 0 30px;
+}
+
+section section{
+    margin-top: 50px;
+}
+
+.main-content section article{
+    margin: 20px;
+}
+
+.main-content section article div{
+    margin-left: 10px;
+}
+.main-content section article h1{
+    margin-bottom: 5px;
+}
+
+.main-content section article h4, .main-content section article p{
+    display: inline-block;
+    margin: 5px 0;
 }
