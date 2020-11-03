@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background: linear-gradient(45deg, rgb(129, 0, 129), rgb(0, 119, 255), orange );
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+
+header .logo img{
+    width: 100px;
+}
+header nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li a{
+    padding: 5px 10px ;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 400;
+    text-transform: capitalize;
+    transition: all .2s;
+    display: block;
+    font-weight: 500;
+
+}
+
+/* header nav ul li a.active, */
+header nav ul li a:hover{
+    background: rgba(115, 28, 255, 0.993);
+    /* color: rgb(255, 0, 0); */
+    transform: scale(1.1);
+}
+
+main{
+    display: grid;
+    grid-template-columns: 300px 1fr 300px;
+    height: calc(100vh - 83px);
+}
+aside{
+    width: 300px;
+    background-color: rgb(226, 226, 226);
+    box-sizing: border-box;
+    padding: 20px;
+    color: rgb(82, 82, 82);
+}
+
+aside marquee{
+    height: 80%;
+}
+
+aside ul{
+    list-style: none;
+    padding-left: 20px;
+}
+aside ul li{
+    margin-bottom: 20px;
+}
+
+aside ul li li{
+    margin-bottom: 5px;
+}
+aside ul li a{
+    text-decoration: none;
+    color: rgb(83, 83, 83);
+    text-transform: capitalize;
+    display: inline-block;
+    transition: .2s;
+}
+aside ul li a:hover{
+    transform: translateY(-3px);
+}
