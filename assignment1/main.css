@@ -189,3 +189,29 @@ section#team article .team_mate:nth-of-type(2)::before{
 section#team article .team_mate p{
     display: block;
 }
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to right, green,rgb(0, 238, 255));
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+footer p{
+    margin: 10px;
+    margin-left: 20px;
+    display: inline-block;
+}
+footer .icons{
+    margin-right: 80px;
+}
+footer .icons a img{
+    width: 30px;
+}
