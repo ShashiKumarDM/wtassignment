@@ -8,32 +8,27 @@
 
         <!-- styles -->
         <link rel="stylesheet" href="./main.css">
-
-        <!-- javascripts -->
-        <!-- <script src="./main.js" defer></script> -->
-        <script defer>
-            function toscroll(value) {
-                event.preventDefault();
-                const id = document.getElementById(value);
-                window.scrollTo(0,id.offsetTop-100);
-            }
-        </script>
-
     </head>
 
     <body>
         <header>
             <div class="header">
-                <div class="logo"><img src="./images/logo-01.svg" alt="logo"></div>
+                <div class="logo"><img src="./logo.png" alt="logo"></div>
                 <nav>
+                    <h2>E- Resume Maker</h2>
                     <ul>
-                        <li><a href="#" onclick="toscroll('home')">home</a></li>
-                        <!-- <li><a href="#">about</a></li> -->
-                        <li><a href="#" onclick="toscroll('education')">education</a></li>
-                        <li><a href="#" onclick="toscroll('skills')">skills</a></li>
-                        <li><a href="#" onclick="toscroll('work')">works</a></li>
-                        <li><a href="#" onclick="toscroll('contact')">contact me</a></li>
-                        <li><a href="#">login</a></li>
+                        <span>
+                            <li><a href="#" onclick="toscroll('home')">home</a></li>
+                            <li><a href="#" onclick="toscroll('abstract')">abstract</a></li>
+                            <li><a href="#" onclick="toscroll('introduction')">introduction</a></li>
+                            <li><a href="#" onclick="toscroll('tables_used')">tables</a></li>
+                            <li><a href="#" onclick="toscroll('services')">services</a></li>
+                            <li><a href="#" onclick="toscroll('team')">Our team</a></li>
+                        </span>
+                        <span>
+                            <li><a href="#" onclick="toscroll('team')">contact us</a></li>
+                            <li><a href="#">login</a></li>
+                        </span>
                     </ul>
                 </nav>
             </div>
@@ -43,163 +38,237 @@
             <aside class="left">
                 <div>
                     <ul>
-                        <li><a href="#" onclick="toscroll('education')">education</a>
+                        <li><a href="#" onclick="toscroll('abstract')">abstract</a></li>
+                        <li><a href="#" onclick="toscroll('introduction')">introduction</a></li>
+                        <li><a href="#" onclick="toscroll('problem_statement')">problem statement</a></li>
+                        <li><a href="#" onclick="toscroll('tables_used')">tables used</a>
                             <ul>
-                                <li><a href="#" onclick="toscroll('tenth')">10th</a></li>
-                                <li><a href="#" onclick="toscroll('puc')">Pre University</a></li>
-                                <li><a href="#" onclick="toscroll('be')">Bachuler of Engineering</a></li>
+                                <li><a href="#" onclick="toscroll('users')">USERS</a></li>
+                                <li><a href="#" onclick="toscroll('languages')">LANGUAGE_USER</a></li>
+                                <li><a href="#" onclick="toscroll('skills')">SKILLS</a></li>
+                                <li><a href="#" onclick="toscroll('skill_user')">SKILL_USER</a></li>
+                                <li><a href="#" onclick="toscroll('achivements')">ACHIVEMENTS</a></li>
+                                <li><a href="#" onclick="toscroll('projects')">PROJECTS</a></li>
+                                <li><a href="#" onclick="toscroll('certification')">CERTIFICATION</a></li>
+                                <li><a href="#" onclick="toscroll('works')">WORKS</a></li>
+                                <li><a href="#" onclick="toscroll('education')">EDUCATION</a></li>
                             </ul>
                         </li>
-                        <li><a href="#" onclick="toscroll('skills')">skills</a>
-                            <ul>
-                                <li><a href="#" onclick="toscroll('nts')">non technical skills</a></li>
-                                <li><a href="#" onclick="toscroll('ts')">technical skills</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#" onclick="toscroll('work')">work</a>
-                            <ul>
-                                <li><a href="#" onclick="toscroll('project')">projects</a></li>
-                                <li><a href="#" onclick="toscroll('others')">others</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#" onclick="toscroll('contact')">contact me</a></li>
+                        <li><a href="#" onclick="toscroll('services')">Services</a></li>
+                        <li><a href="#" onclick="toscroll('technologys_used')">Technology Used</a></li>
+                        <li><a href="#" onclick="toscroll('team')">Our Team</a></li>
                     </ul>
                 </div>
             </aside>
 
 
             <section class="main-content">
-                <div class="details" id="home">
-                    <h1>Shashi Kumar D M</h1>
-                    <p>Pasenate about web Development, Photography and Designing</p>
 
-                    <div class="current-edu">
-                        <p>Currently perceiving my Engineering Degree at Acharya Institutes of Technology in the Domain
-                            Information Science and Engineering</p>
-                    </div>
-                </div>
+                <section id="home">
+                    <h1>Hello this is our E-Resume Project Synopsys.</h1>
+                </section>
 
-                <section id="education">
-                    <h1>Education</h1>
-                    <article id="tenth">
-                        <h1>10<sup>th</sup> Standard</h1>
-                        <div>
-                            <h4>Institute: </h4>
-                            <p>Saint Theresa Primary and High School</p>
-                        </div>
-                        <div>
-                            <h4>Marks: </h4>
-                            <p>80%</p>
-                        </div>
-                    </article>
-                    <article id="puc">
-                        <h1>Pre University</h1>
-                        <div>
-                            <h4>Institute: </h4>
-                            <p>Acharya Pre-University College</p>
-                        </div>
-                        <div>
-                            <h4>Marks: </h4>
-                            <p>78%</p>
-                        </div>
-                    </article>
-                    <article id="be">
-                        <h1>Bachuler of Engineering</h1>
-                        <div>
-                            <h4>Institute: </h4>
-                            <p>Acharya Institute of Technology</p>
-                        </div>
-                        <div>
-                            <h4>Domain: </h4>
-                            <p>Information Science and Engineering</p>
-                        </div>
-                        <div>
-                            <h4>Marks: </h4>
-                            <p>8.4 CGPA (6th Sem)</p>
-                        </div>
+                <section id="abstract">
+                    <h1>Abstract</h1>
+                    <hr class="style-two">
+                    <article>
+                        <p>When a job seeker wants to apply for a job online then
+                            generally he /she needs to attach his /her resume with the email.
+                        </p>
+                        <p>
+                            Online Web profile / Resume creator is a better way to show their resumes
+                            to the employers. A job seeker does not need to attach a
+                            resume with every email, he/she just have to include the URL of
+                            his/her resume and the employer can view the resume online
+                            by clicking on the link and can download as well
+                        </p>
                     </article>
                 </section>
 
-                <section id="skills">
-                    <h1>Skills</h1>
-                    <article id="nts">
-                        <h1>Non Technical Skills</h1>
+                <section id="introduction">
+                    <h1>Introduction</h1>
+                    <hr class="style-two">
+                    <article id="tenth">
+                        <p>
+                            E-Resume / Web Profile Maker is the Web Application which helps students to get their resume
+                            in hand just by filling up a simple form where important credentials need to be filled.
+                        </p>
+                        <p>
+                            After you fill all the forms we will provide you with the persanalised URL, Which they can
+                            share with the employers. One can also download the Profile as a pdf.
+                        </p>
+                        <p>
+                            Any updation in the resume is easy to make.
+                        </p>
+                    </article>
+                </section>
+
+                <section id="problem_statement">
+                    <h1>Problem Statement</h1>
+                    <hr class="style-two">
+                    <article id="tenth">
+                        <p>
+                            Making Resume is a very hectic work for all the students. And any updation to be made is
+                            also defficult.
+                        </p>
+                        <p>
+                            Eveny time the job seeker has to attach his resume during applying the job. If any changes/
+                            Updation of new things learned can not be done after the resume is submited.
+                        </p>
+                    </article>
+                </section>
+
+                <section id="tables_used">
+                    <h1>Tables Used</h1>
+                    <hr class="style-two">
+                    <article id="users">
+                        <h5>USERS</h5>
                         <ul>
-                            <li>Creative</li>
-                            <li>Adaptive</li>
-                            <li>Self Learning</li>
-                            <li>Attention to detail</li>
-                            <li>Time Management</li>
-                            <li>Problem Solving</li>
+                            <li>id</li>
+                            <li>email</li>
+                            <li>password</li>
+                            <li>name</li>
+                            <li>dob</li>
+                            <li>phone_no.</li>
+                            <li>linkdin_id</li>
+                            <li>address</li>
+                            <li>small_description</li>
                         </ul>
                     </article>
-                    <article id="ts">
-                        <h1>Technocal Skills</h1>
+                    <article id="languages">
+                        <h5>LANGUAGE_USER</h5>
+                        <ul>
+                            <li>name</li>
+                            <li>user_id</li>
+                        </ul>
+                    </article>
+                    <article id="skills">
+                        <h5>SKILLS</h5>
+                        <ul>
+                            <li>id</li>
+                            <li>type</li>
+                            <li>skill</li>
+                        </ul>
+                    </article>
+                    <article id="skill_user">
+                        <h5>SKILL_USER</h5>
+                        <ul>
+                            <li>skill_id</li>
+                            <li>user_id</li>
+                        </ul>
+                    </article>
+                    <article id="achivements">
+                        <h5>ACHIVEMENTS</h5>
+                        <ul>
+                            <li>id</li>
+                            <li>user_id</li>
+                            <li>title</li>
+                            <li>description</li>
+                        </ul>
+                    </article>
+                    <article id="projects">
+                        <h5>PROJECTS</h5>
+                        <ul>
+                            <li>id</li>
+                            <li>user_id</li>
+                            <li>title</li>
+                            <li>description</li>
+                        </ul>
+                    </article>
+                    <article id="certification">
+                        <h5>CERTIFICATIONS</h5>
+                        <ul>
+                            <li>id</li>
+                            <li>user_id</li>
+                            <li>title</li>
+                            <li>institute</li>
+                            <li>description</li>
+                        </ul>
+                    </article>
+                    <article id="works">
+                        <h5>WORKS</h5>
+                        <ul>
+                            <li>id</li>
+                            <li>user_id</li>
+                            <li>role</li>
+                            <li>institute</li>
+                            <li>description</li>
+                        </ul>
+                    </article>
+                    <article id="education">
+                        <h5>EDUCATION</h5>
+                        <ul>
+                            <li>id</li>
+                            <li>user_id</li>
+                            <li>institute</li>
+                            <li>course</li>
+                            <li>branch</li>
+                            <li>board</li>
+                            <li>yop</li>
+                            <li>cgpa_%</li>
+                        </ul>
+                    </article>
+
+                </section>
+
+                <section id="services">
+                    <h1>Services</h1>
+                    <hr class="style-two">
+                    <article id="tenth">
+                        <ol>
+                            <li>
+                                Easy creation of Web Profile/ E-Resume by filling some forms.
+                            </li>
+                            <li>
+                                You will get your persanalised URL, Whih you can share with the employers.
+                            </li>
+                            <li>
+                                Easy updation of your profile.
+                            </li>
+                            <li>
+                                You can also download you profile as a pdf if you want.
+                            </li>
+                        </ol>
+                    </article>
+                </section>
+
+                <section id="technologys_used">
+                    <h1>Technologys Used</h1>
+                    <hr class="style-two">
+                    <article id="tenth">
                         <ul>
                             <li>HTML</li>
                             <li>CSS</li>
-                            <li>JAVASCRIPT</li>
+                            <li>JS</li>
                             <li>PHP</li>
-                            <li>DBMS</li>
-                            <li>JAVA</li>
-                            <li>PYTHON</li>
-                            <li>GIT</li>
+                            <li>MYSQL</li>
                         </ul>
                     </article>
                 </section>
 
-                <section id="work">
-                    <h1>Works</h1>
-                    <article id="project">
-                        <h1>Projects</h1>
-                        <article>
-                            <h1>Invoice Management System</h1>
-                            <div>
-                                <p>It was a <b> DBMS </b> project used to store the product details, customers details
-                                    and also generate invoices and estimates</p><br>
-                                <p>Languates used: HTML, CSS, JS, DBMS, PHP</p>
-                            </div>
-                        </article>
-                        <article>
-                            <h1>Notes Repository</h1>
-                            <div>
-                                <p>It was a <b> File Structures </b> project which helps in distribution of Notes to all
-                                    the students</p><br>
-                                <p>Languates used: HTML, CSS, JS, JSON, PHP</p>
-                            </div>
-                        </article>
-                    </article>
-
-                    <article id="others">
-                        <h1>Others</h1>
-                        <article>
-                            <h1>Notes Repository with Laravel framework</h1>
-                            <div>
-                                <p>This is the Notes Repository built using Laravel framework (PHP language). it is a
-                                    secure and a easy platform for the notes distribution and scheduling the Classes by
-                                    adding the meeting-links</p><br>
-                                <p>It has been deployed for a School</p>
-                            </div>
-                        </article>
-                    </article>
-                </section>
-
-                <footer id="contact">
-                    <h1>Contact Me</h1>
+                <section id="team">
+                    <h1>Team</h1>
+                    <hr class="style-two">
                     <article>
-                        <ul>
-                            <li>
-                                <h5>Address: </h5> #xyz xFloor zMain, Bangalore- 560107
-                            </li>
-                            <li>
-                                <h5>Phone: </h5> 8901119879
-                            </li>
-                            <li>
-                                <h5>email: </h5> shashikumar.17.beis@acharya.ac.in
-                            </li>
-                        </ul>
+                        <div class="team_mate">
+                            <h1>Shashi Kumar D M</h1>
+                            <p>USN:  1AY17IS120</p>
+                            <p> 7<sup>th</sup> Sem, ISE</p>
+                            <p>Acharya Institute of Technology</p>
+                            <p>shashilkumar.17.beis@acharya.ac.in</p>
+                            <p>8904877659</p>
+                        </div>
+                        
+                        <div class="team_mate">
+                            <h1>Ravikiran Arasur T S</h1>
+                            <p>USN:  1AY17IS074</p>
+                            <p> 7<sup>th</sup> Sem, ISE</p>
+                            <p>Acharya Institute of Technology</p>
+                            <p>ravikiranaa.17.beis@acharya.ac.in</p>
+                            <p>8904877659</p>
+                        </div>
                     </article>
-                </footer>
+                </section>
 
             </section>
 
@@ -207,16 +276,32 @@
             <aside class="right">
                 <div>
                     <marquee behavior="scroll" direction="up" id="maq">
-                        <h5 onmouseover="maq.stop()" onmouseout="maq.start()">Starting an internship in sparks
-                            foundation
-                        </h5>
-                        <h5 onmouseover="maq.stop()" onmouseout="maq.start()">Making Web technology mini project</h5>
-                        <h5 onmouseover="maq.stop()" onmouseout="maq.start()">Co-cubes is in the next week</h5>
-                        <h5 onmouseover="maq.stop()" onmouseout="maq.start()">Wana work as a developer</h5>
+                        <h5 onmouseover="maq.stop()" onmouseout="maq.start()">This is a Web Technology Project </h5>
+                        <h5 onmouseover="maq.stop()" onmouseout="maq.start()">Which Helps Students / job seakers to
+                            prepare their web-profile/ e-resume</h5>
+                        <h5 onmouseover="maq.stop()" onmouseout="maq.start()">Any changes you want to make is easy with
+                            our Application</h5>
+                        <h5 onmouseover="maq.stop()" onmouseout="maq.start()">We will provide you with a persanalised
+                            url to share your web-profile every were</h5>
                     </marquee>
                 </div>
             </aside>
         </main>
+
+        <!-- javascripts -->
+        <script defer>
+
+            const header = document.querySelector("header .header");
+
+            document.querySelector("main").style.marginTop = header.clientHeight + "px";
+            document.querySelector("aside div").style.offsetTop = header.clientHeight + 100 + "px";
+
+            function toscroll(value) {
+                event.preventDefault();
+                const id = document.getElementById(value);
+                window.scrollTo(0, id.offsetTop - header.clientHeight-25);
+            }
+        </script>
     </body>
 
 </html>

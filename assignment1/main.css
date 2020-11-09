@@ -7,12 +7,13 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 }
 
 header{
     width: 100%;
     box-sizing: border-box;
-    height: 83px;
+    height: 100%;
 }
 
 header .header{
@@ -23,24 +24,52 @@ header .header{
     padding: 10px 50px;
     box-sizing: border-box;
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 5;
+}
+
+.style-two{
+    height: 1px;
+    border: none;
+    background: linear-gradient(to right, rgba(0,0,0,0),rgb(9, 255, 0),rgba(0,0,0,0));
+}
+
+header .logo{
+    margin: auto 0;
 }
 
 header .logo img{
     width: 100px;
 }
+
 header nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-flow: column;
+    margin: 0 auto;
+    width: 100%;
 }
+
 header nav ul{
+    width:80%;
     display: flex;
+    justify-content: space-between;
     list-style: none;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+
+header nav h2{
+    color: white;
+}
+
+header nav ul span{
+    display: flex;
+}
+
 
 header nav ul li a{
     padding: 5px 10px ;
@@ -66,6 +95,7 @@ main{
     display: grid;
     grid-template-columns: 300px 1fr 300px;
     height: calc(100vh - 83px);
+    box-sizing: border-box;
 }
 aside{
     width: 300px;
@@ -78,7 +108,6 @@ aside{
 
 aside div{
     position: fixed;
-    top: 83px;
 }
 
 aside marquee{
@@ -88,6 +117,9 @@ aside marquee{
 aside ul{
     list-style: none;
     padding-left: 20px;
+}
+aside ul ul{
+    margin-top: 10px;
 }
 aside ul li{
     margin-bottom: 20px;
@@ -109,34 +141,18 @@ aside ul li a:hover{
 
 
 .main-content{
-    padding: 30px;
-}
-
-
-.main-content .details h1{
-    margin-bottom: 0;
-}
-.main-content .details h1+p{
-    font-size: .8em;
-    margin-top:0;
-}
-
-.current-edu{
-    padding: 0 30px;
+    margin: 18px;
+    box-sizing: border-box;
 }
 
 section section{
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
-footer ul{
-    list-style: none;
+section section:nth-of-type(1){
+    margin-top: 10px;
 }
 
-footer ul h5{
-    display: inline-block;
-    margin-bottom: 0;
-}
 
 .main-content section article{
     margin: 20px;
@@ -149,7 +165,27 @@ footer ul h5{
     margin-bottom: 5px;
 }
 
-.main-content section article h4, .main-content section article p{
-    display: inline-block;
-    margin: 5px 0;
+section#team article{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+}
+section#team article .team_mate{
+    padding: 5px;
+    position: relative;
+}
+section#team article .team_mate:nth-of-type(2)::before{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 250px;
+    background: linear-gradient(to right,rgba(0,0,0,0), green,rgba(0,0,0,0));
+    transform: rotate(90deg);
+    transform-origin: 0 0;
+    position: absolute;
+    left: -5px;
+    top: 0;
+}
+section#team article .team_mate p{
+    display: block;
 }
